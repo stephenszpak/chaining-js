@@ -8,8 +8,10 @@ function filterNum(value){
 	return value <= 19;
 };
 
-function maths(a, b){
-	return a + b * 1.5 - 1;
+function maths(){
+	for (var i = 0; i < integers.length; i++) {
+		return integers[i] * 1.5 - 1;
+	}
 };
 
 console.log("numbers", integers.sort(numSorter).filter(filterNum).reduce(maths));
